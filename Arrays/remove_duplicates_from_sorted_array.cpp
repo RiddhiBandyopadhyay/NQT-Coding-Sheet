@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// 1 2 3 5 6
-
 int removeDuplicates(vector<int>& nums) {
         int n = nums.size();
         if(n == 0)
@@ -30,6 +28,7 @@ int main()
         arr.push_back(el);
     }
 
+    sort(arr.begin(), arr.end());
     removeDuplicates(arr);
 
     for (int i = 0; i < n; i++)
